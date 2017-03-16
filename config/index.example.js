@@ -16,5 +16,7 @@ const origins = [
 export {
   user,
   pass,
+  receiver,
+  subject,
   origins
 };

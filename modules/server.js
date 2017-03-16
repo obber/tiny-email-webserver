@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 import { postContact } from './controllers';
 
 const app = express();
-const PORT = process.env.PORT || 4545;
+const PORT = process.env.PORT || 9999;
 
 app.use(cors());
 app.use(bodyParser.json());

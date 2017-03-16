@@ -22,7 +22,7 @@ The webserver uses nodemailer and is set up to work with the gmail SMTP protocol
 
 ## API
 
-This app runs on `process.env.PORT` or on port 4545 if `PORT` is not defined in the environment.
+This app runs on `process.env.PORT` or on port 9999 if `PORT` is not defined in the environment.
 
 **POST** to `/contact`
 
