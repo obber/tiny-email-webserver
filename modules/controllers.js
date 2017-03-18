@@ -10,6 +10,8 @@ const messageTemplate = {
 
 export const postContact = async (req, res) => {
   if (!verifyOrigin(req.headers.origin)) {
+    console.log('invaid origin.');
+    console.log('request = ', req.headers.origin);
     res.status(500);
     return res.json({
       success: false,
@@ -20,6 +22,7 @@ export const postContact = async (req, res) => {
   try {
     const { name, email, message } = req.body;
     if (!verifyBody([name, email, message])) {
+      console.log('invalid body. req.body = ', req.body);
       res.status(500);
       return res.json({
         success: false,
