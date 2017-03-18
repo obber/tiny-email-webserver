@@ -31,11 +31,11 @@ export const postContact = async (req, res) => {
     }
     let toSend = {
       text: `
-        contact info: ${name} <${email}>
+        contact info: ${name} [${email}]
         message body: ${message}
       `,
       html: `
-        <p>contact info: ${name} <${email}></p>
+        <p>contact info: ${name} [${email}]</p>
         <p>message body: ${message}</p>
       `
     };
